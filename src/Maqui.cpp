@@ -7,7 +7,6 @@ int Maqui::noteOn = 0x90;
 int Maqui::noteOff = 0x80;
 int Maqui::velocidadCero = 0x00;
 
-// constructor
 Maqui::Maqui() {
     notas = new NotasMIDI();
     pantalla = new Pantalla12x8();
@@ -16,8 +15,6 @@ Maqui::Maqui() {
     perilla2 = new Perilla(patitaPerilla2);
 }
 
-
-// destructor
 Maqui::~Maqui() {
   if (notas != nullptr) {
     delete notas;
@@ -42,7 +39,7 @@ void Maqui::iniciar() {
 
 void Maqui::cambiarCanal(int nuevoCanal) {
   if (nuevoCanal < Maqui::canalMinimo || nuevoCanal > Maqui::canalMaximo) {
-    // error
+    // Error: canal fuera de rango
   } else {
   Maqui::canal = nuevoCanal;
   }
@@ -52,7 +49,6 @@ int Maqui::mostrarCanal() {
   return Maqui::canal;
 }
 
-// send MIDI Note On message
 void Maqui::enviarMIDINoteOn(int nota, int velocidad) {
   Serial1.write(noteOn);
   Serial1.write(nota);
@@ -66,7 +62,6 @@ void Maqui::enviarMIDINoteOff(int nota) {
 }
 
 void Maqui::enviarMIDIControlChange(int control, int valor) {
-  // Serial1.write();
   Serial1.write(control);
   Serial1.write(valor);
 }

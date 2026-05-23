@@ -25,25 +25,26 @@
 var NAVTREE =
 [
   [ "maqui_library", "index.html", [
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+    [ "Estructuras de datos", "annotated.html", [
+      [ "Estructuras de datos", "annotated.html", "annotated_dup" ],
+      [ "Índice de estructuras de datos", "classes.html", null ],
+      [ "Campos de datos", "functions.html", [
+        [ "Todos", "functions.html", null ],
+        [ "Funciones", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+    [ "Archivos", "files.html", [
+      [ "Lista de archivos", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_maqui_8h.html"
+"_interfaz_8h.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+const SYNCONMSG = 'pulsar para deshabilitar sincronización';
+const SYNCOFFMSG = 'pulsar para habilitar sincronización';
+const LISTOFALLMEMBERS = 'Lista de todos los miembros';
