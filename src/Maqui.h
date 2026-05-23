@@ -36,7 +36,7 @@ class Maqui {
         NotasMIDI *notas  = nullptr;
         Pantalla12x8 *pantalla = nullptr;
 
-        // perillas
+        // 3 perillas
         Perilla *perilla0 = nullptr;
         Perilla *perilla1 = nullptr;
         Perilla *perilla2 = nullptr;
