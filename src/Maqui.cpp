@@ -1,4 +1,6 @@
 #include "Maqui.h"
+#include "Interfaz.h"
+#include "Arduino.h"
 
 int Maqui::canal = 1;
 int Maqui::noteOn = 0x90;
@@ -9,6 +11,9 @@ int Maqui::velocidadCero = 0x00;
 Maqui::Maqui() {
     notas = new NotasMIDI();
     pantalla = new Pantalla12x8();
+    perilla0 = new Perilla(patitaPerilla0);
+    perilla1 = new Perilla(patitaPerilla1);
+    perilla2 = new Perilla(patitaPerilla2);
 }
 
 
@@ -19,6 +24,15 @@ Maqui::~Maqui() {
   }
   if (pantalla != nullptr) {
       delete pantalla;
+  }
+  if (perilla0 != nullptr) {
+    delete perilla0;
+  }
+    if (perilla1 != nullptr) {
+    delete perilla1;
+  }
+    if (perilla2 != nullptr) {
+    delete perilla2;
   }
 }
 

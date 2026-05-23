@@ -29,6 +29,8 @@ jobs:
             - examples/
           libraries: |
             - source-path: ./
+            - name: Boton
             - name: FrecuenciasMIDI
             - name: NotasMIDI
             - name: Pantalla12x8
+            - name: Perilla
