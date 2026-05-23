@@ -1,9 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "m",
+  0: "ceimnpv~",
   1: "m",
-  2: "m",
-  3: "m"
+  2: "im",
+  3: "ceim~",
+  4: "cnpv"
 };
 
 var indexSectionNames =
@@ -11,14 +12,16 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "files",
-  3: "functions"
+  3: "functions",
+  4: "variables"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Data Structures",
-  2: "Files",
-  3: "Functions"
+  0: "Todos",
+  1: "Estructuras de datos",
+  2: "Archivos",
+  3: "Funciones",
+  4: "Variables"
 };
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maqui_0',['Maqui',['../class_maqui.html#acefbdf0c6f19e9998f0e4d286bc145db',1,'Maqui']]]
+  ['cambiarcanal_0',['cambiarCanal',['../class_maqui.html#a7398133169ae66eb6978adcd2e7600c7',1,'Maqui']]]
 ];
